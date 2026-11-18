@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-11-18T02:03:14.142Z",
+  "dryRun": true,
+  "overwrite": false,
+  "total": 6,
+  "imported": 3,
+  "duplicates": 1,
+  "outOfScope": 2,
+  "invalid": 0,
+  "conflicts": 0,
+  "renamed": 0,
+  "decisions": [
+    {
+      "legacyId": 101,
+      "title": "食堂试运营的前七天应该如何安排",
+      "action": "IMPORT",
+      "reason": "业务相关内容，通过重复检查。",
+      "target": "/insights/canteen-opening-week"
+    },
+    {
+      "legacyId": 102,
+      "title": "食材配送异常如何完成闭环",
+      "action": "IMPORT",
+      "reason": "业务相关内容，通过重复检查。",
+      "target": "/insights/delivery-exception-workflow"
+    },
+    {
+      "legacyId": 103,
+      "title": "园区食堂高峰期动线改造演示",
+      "action": "IMPORT",
+      "reason": "业务相关内容，通过重复检查。",
+      "target": "/cases/campus-peak-flow-demo"
+    },
+    {
+      "legacyId": 104,
+      "title": "食堂试运营的前七天应该如何安排",
+      "action": "SKIP_DUPLICATE",
+      "reason": "规范化标题或正文摘要与已处理记录重复。"
+    },
+    {
+      "legacyId": 105,
+      "title": "春季养生食谱的十种搭配",
+      "action": "SKIP_OUT_OF_SCOPE",
+      "reason": "与餐饮管理业务无关，迁移时剔除。"
+    },
+    {
+      "legacyId": 106,
+      "title": "中医食疗与日常保健问答",
+      "action": "SKIP_OUT_OF_SCOPE",
+      "reason": "与餐饮管理业务无关，迁移时剔除。"
+    }
+  ]
+}

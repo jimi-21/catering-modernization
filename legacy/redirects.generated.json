@@ -1,0 +1,14 @@
+[
+  {
+    "from": "/plus/view.php?aid=101",
+    "to": "/insights/canteen-opening-week"
+  },
+  {
+    "from": "/a/supply/102.html",
+    "to": "/insights/delivery-exception-workflow"
+  },
+  {
+    "from": "/plus/view.php?aid=103",
+    "to": "/cases/campus-peak-flow-demo"
+  }
+]

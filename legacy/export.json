@@ -1,0 +1,56 @@
+[
+  {
+    "id": 101,
+    "title": "食堂试运营的前七天应该如何安排",
+    "slug": "canteen-opening-week",
+    "category": "食堂运营",
+    "body": "试运营需要提前确认就餐人数、供餐动线和岗位分工。第一天记录实际到场人数，第三天复核菜品与份量，第七天汇总问题和改进责任人。所有调整都应进入运营记录，而不是只依赖现场口头沟通。",
+    "createdAt": "2021-01-12T08:00:00.000Z",
+    "legacyUrl": "/plus/view.php?aid=101"
+  },
+  {
+    "id": 102,
+    "title": "食材配送异常如何完成闭环",
+    "slug": "delivery-exception-workflow",
+    "category": "食材配送",
+    "body": "到货后发现品项、数量或品质异常时，先隔离相关食材并核对订单，再记录问题与证据，确认补送或退换结果。每日复核异常原因，将重复问题纳入供应商评估。",
+    "createdAt": "2021-01-08T08:00:00.000Z",
+    "legacyUrl": "/a/supply/102.html"
+  },
+  {
+    "id": 103,
+    "title": "园区食堂高峰期动线改造演示",
+    "slug": "campus-peak-flow-demo",
+    "category": "项目案例",
+    "body": "本演示案例记录高峰期排队问题的分析过程。项目先测量取餐与结账停留时间，再调整窗口分工和餐品摆放，最后通过一周记录复核调整效果。",
+    "createdAt": "2020-12-18T08:00:00.000Z",
+    "legacyUrl": "/plus/view.php?aid=103"
+  },
+  {
+    "id": 104,
+    "title": "食堂试运营的前七天应该如何安排",
+    "slug": "canteen-opening-week-copy",
+    "category": "食堂运营",
+    "body": "试运营需要提前确认就餐人数、供餐动线和岗位分工。第一天记录实际到场人数，第三天复核菜品与份量，第七天汇总问题和改进责任人。所有调整都应进入运营记录，而不是只依赖现场口头沟通。",
+    "createdAt": "2021-01-13T08:00:00.000Z",
+    "legacyUrl": "/plus/view.php?aid=104"
+  },
+  {
+    "id": 105,
+    "title": "春季养生食谱的十种搭配",
+    "slug": "spring-wellness-recipes",
+    "category": "健康养生",
+    "body": "这是一篇与餐饮管理企业服务无关的旧站文章，用于验证迁移工具能够识别并剔除历史上为了关键词流量发布的内容。",
+    "createdAt": "2020-05-02T08:00:00.000Z",
+    "legacyUrl": "/a/wellness/105.html"
+  },
+  {
+    "id": 106,
+    "title": "中医食疗与日常保健问答",
+    "slug": "traditional-wellness-qa",
+    "category": "保健文章",
+    "body": "这篇演示数据同样不属于食堂承包、团餐运营、食材配送或厨房设计业务，因此不应进入新站内容库，也不需要为其创建新链接。",
+    "createdAt": "2020-04-16T08:00:00.000Z",
+    "legacyUrl": "/a/wellness/106.html"
+  }
+]

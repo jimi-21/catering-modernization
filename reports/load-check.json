@@ -1,0 +1,11 @@
+{
+  "total": 20000,
+  "concurrency": 50,
+  "statuses": {
+    "200": 20000
+  },
+  "durationMs": 198360,
+  "averageMs": 496,
+  "p95Ms": 809,
+  "maxMs": 1992
+}
