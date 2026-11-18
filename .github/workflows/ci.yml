@@ -53,7 +53,10 @@ jobs:
       - run: npm run db:setup
       - run: npm run build
       - run: npx playwright install firefox webkit
-      - run: npx playwright install-deps webkit
+      - name: Install WebKit system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libgtk-4-1 libgraphene-1.0-0 libevent-2.1-7t64 libopus0 libgstreamer-plugins-base1.0-0 libgstreamer-gl1.0-0 libgstreamer-plugins-bad1.0-0 libavif16 libharfbuzz-icu0 libwayland-server0 libmanette-0.2-0 libsecret-1-0 libhyphen0 libgles2 gstreamer1.0-libav
       - run: PLAYWRIGHT_BROWSER=firefox npm run test:e2e
       - run: PLAYWRIGHT_BROWSER=webkit npm run test:e2e
       - uses: actions/upload-artifact@v4
