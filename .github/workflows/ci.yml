@@ -52,7 +52,8 @@ jobs:
       - run: npm ci
       - run: npm run db:setup
       - run: npm run build
-      - run: npx playwright install --with-deps webkit
+      - run: npx playwright install firefox webkit
+      - run: npx playwright install-deps webkit
       - run: PLAYWRIGHT_BROWSER=firefox npm run test:e2e
       - run: PLAYWRIGHT_BROWSER=webkit npm run test:e2e
       - uses: actions/upload-artifact@v4
