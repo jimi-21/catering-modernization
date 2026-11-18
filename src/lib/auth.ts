@@ -2,6 +2,7 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
+import { getSiteUrl } from "@/lib/site";
 
 const COOKIE_NAME = "hengshan_admin";
 const SESSION_DURATION_SECONDS = 60 * 60 * 8;
@@ -54,6 +55,10 @@ export function verifySessionToken(token?: string): AdminSession | null {
   }
 }
 
+function secureSessionCookie() {
+  return process.env.NODE_ENV === "production" && getSiteUrl().startsWith("https://");
+}
+
 export async function createAdminSession(user: { email: string; name: string }) {
   const session = {
     ...user,
@@ -63,7 +68,7 @@ export async function createAdminSession(user: { email: string; name: string }) 
   cookieStore.set(COOKIE_NAME, createSessionToken(session), {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: secureSessionCookie(),
     path: "/",
     maxAge: SESSION_DURATION_SECONDS,
   });
@@ -92,7 +97,7 @@ export async function destroyAdminSession() {
   cookieStore.set(COOKIE_NAME, "", {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: secureSessionCookie(),
     path: "/",
     expires: new Date(0),
   });
